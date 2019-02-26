@@ -37,6 +37,8 @@ module "az_vms" {
 * **k8s_image_name**: A string used as custom k8s image name (required).
 * **bastion_image_name**: A string used as custom bastion image name (required).
 * **ssh_public_key**: A string used as the public ssh key for connect to bastion (required).
+* **manager_vm_size**: Specifies the size of the Virtual Machine Manager.(type: string, default: Standard_DS2_v2).
+* **worker_vm_size**: Specifies the size of the Virtual Machine Worker.(type: string, default: Standard_DS4_v2).
 * **worker_count**: A string used as number of workers (default: 3).
 * **network_security_group_id**: A string used as network security group ID.
 * **lb_address_pool_id**: A string used as load balancer address pool ID.
